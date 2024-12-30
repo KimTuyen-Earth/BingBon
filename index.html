@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo-removebg-preview.png">
+    <title>BingBon</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo-container"> 
+            <a href="#" class="unit-title-header" style="font-size: 40px;">
+                <img src="img/logo-removebg-preview.png" style="height: 40px; vertical-align: middle;border-radius: 40px;">
+                BingBon
+            </a>
+        </div>
+        
+        <button 
+                    id="unit-title-header" class="unit-title-header"> READ AND LEARN MORE ABOUT BOOKS WITH BINGBON 
+        </button>
+        <div class="account-container">
+            <a href="login.html" class="badge">Log In</a>
+            <button class="tab-summary-button1" onclick="toggleTabSummary()" style="font-size: 30px; ">☰
+            </button>
+            <div id="tab-summary" style="display: none; border: 1px solid #ccc; padding: 10px; background: #ffd1d6; position: absolute; top: 100px; right: 10px; width: 200px; z-index: 1000;">
+                <h2></h2>
+                <a href="about.html" class="tab-summary-button" style="align-items: center; padding-top: 5px;">About</a>
+                <ul id="tab-list"></ul>
+                <a href="login.html" class="tab-summary-button" style="align-items: center; padding-top: 5px;">Comic</a>
+                <ul id="tab-list"></ul>
+                <a href="login.html" class="tab-summary-button" style="align-items: center; padding-top: 5px;">Novel</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Content -->
+        <div class="img-container"> 
+            <img src="img/SS.png"  class="background-image">
+            <img src="img/S6.png"  class="foreground-image">
+        </div>
+    
+        <!-- Quảng Cáo Section -->
+         <div class="col-md-9 p-4">
+         <div class="ad-section">
+            <h3>Sign up to learn more</h3>
+            <p>Let's learn more about books</p>
+            <a href="login.html" class="register-link">Register now</a>
+         </div>
+         </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 website made by kt.</p>
+        </div>
+    </footer>
+    <script src="main/index.js"></script>
+</body>
+</html>

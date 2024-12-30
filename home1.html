@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo-removebg-preview.png">
+    <title>BingBon</title>
+    <link rel="stylesheet" href="css/home1.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-container">
+        <div class="logo-container"> 
+            <a href="#" class="unit-title-header" style="font-size: 40px;">
+                <img src="img/logo-removebg-preview.png" style="height: 40px; vertical-align: middle;border-radius: 40px;">
+                BingBon
+            </a>
+        </div>
+                <button 
+                    id="unit-title-header" class="unit-title-header"> READ AND LEARN MORE ABOUT BOOKS WITH BINGBON  
+                </button>
+                <div class="account-container">
+                    <span class="name" id="user-name">Jonh</span>
+                    <a href="login.html" class="badge">Log Out</a>
+                    <button class="tab-summary-button1" onclick="toggleTabSummary()" style="font-size: 30px; ">☰
+                    </button>
+                    <div id="tab-summary" style="display: none; border: 1px solid #ccc; padding: 10px; background: #ffd1d6; position: absolute; top: 100px; right: 10px; width: 200px; z-index: 1000;">
+                        <h2></h2>
+                        <a href="about.html" class="tab-summary-button" style="align-items: center; padding-top: 5px;">About</a>
+                        <ul id="tab-list"></ul>
+                        <a href="home1.html" class="tab-summary-button" style="align-items: center; padding-top: 5px;">Comic</a>
+                        <ul id="tab-list"></ul>
+                        <a href="home1.html" class="tab-summary-button" style="align-items: center; padding-top: 5px;">Novel</a>
+                    </div>
+                </div>
+                  
+    </header>          
+            <!-- Content -->
+            <main class="col-md-9 p-4" style="width: 100%; display: flex;">
+            <div id="test-content">
+                <!-- Course Cards -->
+                <div class="course-container">
+                   <!--Cards 1 -->
+                   <div class="course-card">
+                       <div class="course-image">
+                        <img id="profileImage" src="https://cataas.com/cat?random=1" alt="Course Image">
+                       </div>
+                       <div class="course-info">
+                           <h3>Social Science Subjects</h3>
+                           <p class="course-location">Vocabulary</p>
+                           <div class="course-rating">
+                               <span>4.7⭐</span> <span>(429,451)</span>
+                           </div>
+                           <div class="course-price">
+                               <span>₫250,000</span>
+                           </div>
+                           <button class="bestseller">Read now!!!</button>
+                       </div>
+                   </div>
+                   <!--Cards 2 -->
+                   <div class="course-card">
+                       <div class="course-image">
+                        <img id="profileImage" src="https://cataas.com/cat?random=2" alt="Course Image">
+                       </div>
+                       <div class="course-info">
+                           <h3>Natural Science Subjects</h3>
+                           <p class="course-location">Vocabulary</p>
+                           <div class="course-rating">
+                               <span>4.8⭐</span> <span>(545,000)</span>
+                           </div>
+                           <div class="course-price">
+                               <span>₫250,000</span>
+                           </div>
+                           <button class="bestseller">Read now!!!</button>
+                       </div>
+                   </div>
+                   <!--Cards 3 -->
+                   <div class="course-card">
+                    <div class="course-image">
+                        <img id="profileImage" src="https://cataas.com/cat?random=3" alt="Course Image">
+                    </div>
+                    <div class="course-info">
+                        <h3>Natural Science Subjects</h3>
+                        <p class="course-location">Vocabulary</p>
+                        <div class="course-rating">
+                            <span>4.8⭐</span> <span>(545,000)</span>
+                        </div>
+                        <div class="course-price">
+                            <span>₫250,000</span>
+                        </div>
+                        <button class="bestseller">Read now!!!</button>
+                    </div>
+                </div>
+                <!--Cards 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img id="profileImage" src="https://cataas.com/cat?random=4" alt="Course Image">
+                    </div>
+                    <div class="course-info">
+                        <h3>Natural Science Subjects</h3>
+                        <p class="course-location">Vocabulary</p>
+                        <div class="course-rating">
+                            <span>4.8⭐</span> <span>(545,000)</span>
+                        </div>
+                        <div class="course-price">
+                            <span>₫250,000</span>
+                        </div>
+                        <button class="bestseller">Read now!!!</button>
+                    </div>
+                </div>
+                <!--Cards 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img id="profileImage" src="https://cataas.com/cat?random=5" alt="Course Image">
+                    </div>
+                    <div class="course-info">
+                        <h3>Natural Science Subjects</h3>
+                        <p class="course-location">Vocabulary</p>
+                        <div class="course-rating">
+                            <span>4.8⭐</span> <span>(545,000)</span>
+                        </div>
+                        <div class="course-price">
+                            <span>₫250,000</span>
+                        </div>
+                        <button class="bestseller">Read now!!!</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </main>
+            <main class="col-md-9 p-4">
+                <div class="text-start d-none" id="submit-btn-container">
+                    
+                    <button id="submit-btn" class="btn btn-primary" style="background-color: #FF4E42;">Submit your assignment</button>
+                </div>
+            </main>
+            
+            
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 website made by kt.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="main/home1.js"></script>
+    
+</body>
+</html>

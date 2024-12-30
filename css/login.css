@@ -1,0 +1,179 @@
+:root {
+    --primary-color: #ffd1d6; /* Màu chính: đỏ cam */
+    --secondary-color: #a21d33; /* Màu phụ: xám đậm */
+    --background-color: #ffd1d6; /* Màu nền: nhạt */
+    --text-color: #a21d33; /* Màu chữ: xám */
+    --font-family: 'Noto Sans', bold; /* Font chữ */
+    --border-radius: 8px; /* Độ bo góc cho các phần tử */
+}
+
+body {
+    background-color: #fff1f1 !important;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffd1d6 !important;
+    color: var(--primary-color);
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid var(--text-color);
+    transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo-container {
+    display: flex; /* Sắp xếp các phần tử theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.logo-container .logo-round {
+    height: 30px;
+    width: 30px;
+    border-radius: 100% !important; /* Biến hình ảnh thành hình tròn */
+    margin-right: 10px; /* Khoảng cách giữa logo và văn bản */
+    object-fit: cover !important; /* Đảm bảo hình ảnh vừa với khung tròn */
+}
+
+
+.unit-title-header {
+    text-decoration: none;
+    font-size: 25px ;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    background-color: #ffd1d6;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    margin-left: 20px; /* Khoảng cách bên trái từ BingBon đến About */
+}
+
+.unit-title-header img {
+    margin-right:0; /* Khoảng cách giữa logo và chữ BingBon */
+}
+
+.unit-title-header1 {
+    font-size: 25px !important ;
+    font-weight: bold;
+    color: #b21630d2;
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    padding-bottom: 0;
+    background-color: #ffd1d6;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    align-items: center !important;
+}
+.unit-title-header1:hover {
+    color: #2c0a0f; /* Đổi màu khi hover */
+}
+.about-link:hover,
+.about-link:focus,
+.about-link:visited {
+    color: #0056b3; /* Màu chữ khi hover hoặc nhấn */
+}
+.account-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px !important;
+}
+
+.account-container .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.account-container .badge {
+    background-color: #a21d33;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unit-title-header {
+        font-size: 22px;
+    }
+
+    .btn-back {
+        width: 100%;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6b60; /* Màu sáng hơn để tạo hiệu ứng */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.input-group-text, .form-control {
+    border-radius: var(--border-radius);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tùy chỉnh cho màu phụ */
+.navbar {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Tùy chỉnh cho màu phụ */
+

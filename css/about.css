@@ -1,0 +1,287 @@
+:root {
+    --primary-color: #ffd1d6; /* Màu chính: đỏ cam */
+    --secondary-color: #a21d33; /* Màu phụ: xám đậm */
+    --background-color: #ffd1d6; /* Màu nền: nhạt */
+    --text-color: #a21d33; /* Màu chữ: xám */
+    --font-family: 'Noto Sans', bold; /* Font chữ */
+    --border-radius: 8px; /* Độ bo góc cho các phần tử */
+}
+
+body {
+    background-color: #fff1f1 !important;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffd1d6 !important;
+    color: var(--primary-color);
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid var(--text-color);
+    transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo-container {
+    display: flex; /* Sắp xếp các phần tử theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.logo-container .logo-round {
+    height: 30px;
+    width: 30px;
+    border-radius: 100% !important; /* Biến hình ảnh thành hình tròn */
+    margin-right: 10px; /* Khoảng cách giữa logo và văn bản */
+    object-fit: cover !important; /* Đảm bảo hình ảnh vừa với khung tròn */
+}
+
+
+.unit-title-header {
+    font-size: 25px ;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    background-color: #ffd1d6;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    margin-left: 20px; /* Khoảng cách bên trái từ BingBon đến About */
+}
+
+.unit-title-header img {
+    margin-right:0; /* Khoảng cách giữa logo và chữ BingBon */
+}
+
+.unit-title-header1 {
+    font-size: 25px !important ;
+    font-weight: bold;
+    color: #b21630d2;
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    padding-bottom: 0;
+    background-color: #ffd1d6;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    align-items: center !important;
+}
+.unit-title-header1:hover {
+    color: #2c0a0f; /* Đổi màu khi hover */
+}
+.about-link:hover,
+.about-link:focus,
+.about-link:visited {
+    color: #0056b3; /* Màu chữ khi hover hoặc nhấn */
+}
+.account-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px !important;
+}
+
+.account-container .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.account-container .badge {
+    background-color: #a21d33;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unit-title-header {
+        font-size: 22px;
+    }
+
+    .btn-back {
+        width: 100%;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+}
+/* footer */
+.footer {
+    background-color: #222; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 6px 0; /* Khoảng cách trên dưới */
+    font-family: Arial, sans-serif;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+/* main */
+.main-layout {
+    
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #fff1f1;
+    color: #ffd1d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-weight: bold !important;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar button {
+    font-weight: b;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #ffd1d6;
+    color: #a21d33;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar button:hover {
+    background-color: #a21d33;
+    transform: scale(1.05);
+    color: #ffd1d6;
+}
+
+.sidebar button:focus {
+    outline: none;
+    background-color: #a21d33;
+    color: #ffd1d6;
+}
+
+/* Content Styling */
+.content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.info-box {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.info-box.active {
+    display: block;
+}
+
+.info-box h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Định dạng chung cho layout */
+.personal-info {
+    align-items: center;
+    font-size: 16px;
+}
+
+/* Định dạng hình ảnh cá nhân */
+.profile-image {
+    margin-right: 40px; /* Khoảng cách giữa hình ảnh và thông tin */
+}
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Cắt hình ảnh thành hình tròn */
+    border: 5px solid #ffd1d6;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+}
+
+/* Định dạng thông tin cá nhân bên phải */
+.info-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    margin-top: 15px; /* Khoảng cách giữa các thông tin */
+    font-size: 16px;
+}
+
+.info-item strong {
+    color: #333;
+}
+
+.info-item span {
+    color: #555;
+}
+
+/* Tiêu đề */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #a21d33 !important;
+    font-weight: bold !important;
+}

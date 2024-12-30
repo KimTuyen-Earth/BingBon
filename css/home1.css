@@ -1,0 +1,318 @@
+:root {
+    --primary-color: #ffd1d6; /* Màu chính: đỏ cam */
+    --secondary-color: #a21d33; /* Màu phụ: xám đậm */
+    --background-color: #ffd1d6; /* Màu nền: nhạt */
+    --text-color: #a21d33; /* Màu chữ: xám */
+    --font-family: 'Noto Sans', bold; /* Font chữ */
+    --border-radius: 8px; /* Độ bo góc cho các phần tử */
+}
+
+body {
+    background-color: #fff1f1 !important;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffd1d6 !important;
+    color: var(--primary-color);
+    padding: 20px 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid var(--text-color);
+    transition: box-shadow 0.3s ease;
+}
+
+header:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Tăng bóng đổ khi hover */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo-container {
+    display: flex; /* Sắp xếp các phần tử theo hàng ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+.logo-container .logo-round {
+    height: 30px;
+    width: 30px;
+    border-radius: 100% !important; /* Biến hình ảnh thành hình tròn */
+    margin-right: 10px; /* Khoảng cách giữa logo và văn bản */
+    object-fit: cover !important; /* Đảm bảo hình ảnh vừa với khung tròn */
+}
+
+
+.unit-title-header {
+    font-size: 25px ;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    background-color: #ffd1d6;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    margin-left: 20px; /* Khoảng cách bên trái từ BingBon đến About */
+}
+
+.unit-title-header img {
+    margin-right:0; /* Khoảng cách giữa logo và chữ BingBon */
+}
+
+.unit-title-header1 {
+    font-size: 25px !important ;
+    font-weight: bold;
+    color: #b21630d2;
+    text-decoration: none;
+    border: none;
+    padding: 7px;
+    padding-bottom: 0;
+    background-color: #ffd1d6;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+    align-items: center !important;
+}
+.unit-title-header1:hover {
+    color: #2c0a0f; /* Đổi màu khi hover */
+}
+.about-link:hover,
+.about-link:focus,
+.about-link:visited {
+    color: #0056b3; /* Màu chữ khi hover hoặc nhấn */
+}
+.account-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px !important;
+}
+
+.account-container .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: var(--text-color);
+}
+
+.account-container .badge {
+    background-color: #a21d33;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .unit-title-header {
+        font-size: 22px;
+    }
+
+    .btn-back {
+        width: 100%;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+}
+.tab-summary-button1 {
+    background-color: #ffd1d6;
+    color: #a21d33;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1001;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tab-summary-button1:hover {
+    background-color: #ffd1d6;
+    color: #ffffff;
+}
+
+    .tab-summary-button {
+        background-color: #fff1f1;
+        color: #a21d33;
+        border: none;
+        padding: 10px 15px;
+        font-size: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1001;
+        padding-right: 100px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .tab-summary-button:hover {
+        background-color: #a21d33;
+        color: #ffd1d6;
+    }
+
+    #tab-summary {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
+    #tab-summary h3 {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    #tab-summary ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    #tab-summary ul li {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+/* footer */
+.footer {
+    background-color: #222; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 6px 0; /* Khoảng cách trên dưới */
+    font-family: Arial, sans-serif;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+/* Course Cards */
+.course-container {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.course-card {
+    width: calc(50% - 10px);
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4; /* Màu nền sáng hơn khi hover */
+}
+
+.course-image {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 8px 0 0 8px;
+}
+
+.course-image img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.course-info {
+    width: 60%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.course-location {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.course-rating {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.course-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #a21d33;
+    margin-bottom: 10px;
+}
+
+.bestseller {
+    background-color: #a21d33;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.bestseller:hover {
+    background-color: #e53935;
+    transform: scale(1.05); /* Tăng kích thước khi hover */
+}
+
+/* Responsive Design */
+@media (max-width: 300px) {
+    .course-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .course-image {
+        width: 100%;
+    }
+
+    .course-info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .unit-title-header {
+        font-size: 22px;
+    }
+
+    .btn-back {
+        width: 100%;
+    }
+
+    .badge {
+        font-size: 14px;
+    }
+}

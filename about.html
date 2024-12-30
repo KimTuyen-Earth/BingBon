@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo-removebg-preview.png">
+    <title>BingBon</title>
+    <link rel="stylesheet" href="css/about.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intro.js/minified/introjs.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-container">
+        <div class="logo-container"> 
+            <a href="index.html" class="unit-title-header" style="font-size: 40px;">
+                <img src="img/logo-removebg-preview.png" style="height: 40px; vertical-align: middle;border-radius: 40px;">
+                BingBon
+            </a>
+        </div>
+    </header>          
+     <!-- Main Layout -->
+     <main class="main-layout">
+        <div class="sidebar">
+            <button onclick="showInfo('info1')">Personal information</button>
+            <button onclick="showInfo('info2')">Field of study</button>
+            <button onclick="showInfo('info3')">Other information</button>
+            <button onclick="showInfo('info4')">Return to home page</button>
+        </div>
+        <div class="content">
+            <div id="info1" class="info-box active">
+                <h2>Personal Information</h2>
+                <div class="personal-info">
+                    <!-- Hình ảnh cá nhân -->
+                    <div class="profile-image">
+                        <img src="img/kt.jpg" alt="Profile Image">
+                    </div>
+                    <!-- Thông tin cá nhân -->
+                    <div class="info-item">
+                        <strong>Name:</strong> <span>Tiet Thi Kim Tuyen</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>MSSV:</strong> <span>23130377</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Year of Birth:</strong> <span>15/08/2005</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Address:</strong> <span> Vietnam</span>
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone Number:</strong> <span>+84 123 456 789</span>
+                    </div>
+                </div>
+            </div>
+            <div id="info2" class="info-box">
+                <h2>Field of study</h2>
+                <div class="info-item">
+                    <strong>Field of study: </strong> <span>Information Technology</span>
+                </div>
+                <div class="info-item">
+                    <strong>Experience: </strong> <span>5 years</span>
+                </div>
+                <div class="info-item">
+                    <strong>Belonging to the fields: </strong> <span>Computer Network, Design,...</span>
+                </div>
+                <p>In addition, She also study and excel in many other fields, not only Information Technology.</p>
+            </div>
+            <div id="info3" class="info-box">
+                <h2>Other information</h2>
+                <p></p>
+            </div>
+            <div id="info4" class="info-box">
+                <h2>Return to home page</h2>
+                <p>You really want to return?</p>
+                <a href="index.html" style="padding: 10px; background-color: #ffd1d6; color: #a21d33; border-radius: 5px; text-decoration: none; font-weight: bold;">Return to home page</a>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 website made by kt.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="main/about.js"></script>
+    
+</body>
+</html>
